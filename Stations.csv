@@ -1,0 +1,141 @@
+﻿Station ID,Stop Name,Borough,Route,Nodes
+119,1 Av,M,L,L020
+156,103 St,M,A,A053
+193,104 St,Q,A,A017
+82,104 St,Q,J,J005
+194,111 St,Q,A,A016
+81,111 St,Q,J,J004
+154,116 St,M,A,A055
+80,121 St,Q,J,J003
+153,125 St,M,A,A056
+152,135 St,M,A,A057
+166,14 St,M,A:E,A043:E028
+117,14 St-Union Sq.,M,L,L022
+151,145 St,M,A,A058
+150,155 St,M,A,A059
+149,163 St-Amsterdam Av,M,A,A060
+148,168 St,M,A,A061
+147,175 St,M,A,A062
+146,181 St,M,A,A063
+145,190 St,M,A,A064
+165,23 St,M,A:E,A044:E027
+118,3 Av,M,L,L021
+164,34 St-Penn Station,M,A:E,A045:E026
+272,36 St,Q,E,E018
+163,42 St-Port Authority Bus Terminal,M,A:E,A046:E025
+270,46 St,Q,E,E016
+276,5 Av/53 St,M,E,E022
+162,50 St,M,A:E,A047:E024
+161,59 St-Columbus Circle,M,A,A048
+116,6 Av,M,L,L023
+263,63 Dr-Rego Park,Q,E,E009
+268,65 St,Q,E,E014
+262,67 Av,Q,E,E008
+277,7 Av,M,E,E023
+160,72 St,M,A,A049
+260,75 Av,Q,E,E006
+85,75 St-Elderts Ln,Q,J,J008
+115,8 Av,M,L,L024
+190,80 St,Q,A,A020
+159,81 St-Museum of Natural History,M,A,A050
+84,85 St-Forest Pkwy,Q,J,J007
+158,86 St,M,A,A051
+191,88 St,Q,A,A019
+157,96 St,M,A,A052
+91,Alabama Av,Bk,J,J014
+196,Aqueduct Racetrack,Q,A,A014
+197,Aqueduct-N Conduit Av,Q,A,A013
+133,Atlantic Av,Bk,L,L006
+202,Beach 105 St,Q,A,A008
+208,Beach 25 St,Q,A,A002
+207,Beach 36 St,Q,A,A003
+206,Beach 44 St,Q,A,A004
+205,Beach 60 St,Q,A,A005
+204,Beach 67 St,Q,A,A006
+200,Beach 90 St,Q,A,A010
+201,Beach 98 St,Q,A,A009
+120,Bedford Av,Bk,L,L019
+103,Bowery,M,J,J026
+258,Briarwood,Q,E,E004
+199,Broad Channel,Q,A,A011
+107,Broad St,M,J,J030
+184,Broadway Junction,Bk,A:J:L,A026:J015:L007
+131,Bushwick Av-Aberdeen St,Bk,L,L008
+169,Canal St,M,A:E,A040:E031
+104,Canal St,M,J,J027
+138,Canarsie-Rockaway Pkwy,Bk,L,L001
+155,Cathedral Pkwy (110 St),M,A,A054
+170,Chambers St,M,A,A039
+105,Chambers St,M,J,J028
+93,Chauncey St,Bk,J,J016
+89,Cleveland St,Bk,J,J012
+177,Clinton-Washington Avs,Bk,A,A033
+274,Court Sq-23 St,Q,E,E020
+87,Crescent St,Bk,J,J010
+86,Cypress Hills,Bk,J,J009
+127,DeKalb Av,Bk,L,L012
+102,Delancey St-Essex St,M,J,J025
+144,Dyckman St,M,A,A065
+137,East 105 St,Bk,L,L002
+266,Elmhurst Av,Q,E,E012
+188,Euclid Av,Bk,A,A022
+209,Far Rockaway-Mott Av,Q,A,A001
+98,Flushing Av,Bk,J,J021
+261,Forest Hills-71 Av,Q,E,E007
+178,Franklin Av,Bk,A,A032
+172,Fulton St,M,A,A038
+106,Fulton St,M,J,J029
+95,Gates Av,Bk,J,J018
+122,Graham Av,Bk,L,L017
+265,Grand Av-Newtown,Q,E,E011
+123,Grand St,Bk,L,L016
+189,Grant Av,Bk,A,A021
+94,Halsey St,Bk,J,J017
+129,Halsey St,Q,L,L010
+100,Hewes St,Bk,J,J023
+173,High St,Bk,A,A037
+198,Howard Beach-JFK Airport,Q,A,A012
+175,Hoyt-Schermerhorn Sts,Bk,A,A035
+143,Inwood-207 St,M,A,A066
+267,Jackson Hts-Roosevelt Av,Q,E,E013
+278,Jamaica Center-Parsons/Archer,Q,E:J,J001:E001
+280,Jamaica-Van Wyck,Q,E,E003
+174,Jay St-MetroTech,Bk,A,A036
+126,Jefferson St,Bk,L,L013
+259,Kew Gardens-Union Tpke,Q,E,E005
+180,Kingston-Throop Avs,Bk,A,A030
+96,Kosciuszko St,Bk,J,J019
+176,Lafayette Av,Bk,A,A034
+275,Lexington Av/53 St,M,E,E021
+185,Liberty Av,Bk,A,A025
+135,Livonia Av,Bk,L,L004
+99,Lorimer St,Bk,J,J022
+121,Lorimer St,Bk,L,L018
+101,Marcy Av,Bk,J,J024
+124,Montrose Av,Bk,L,L015
+125,Morgan Av,Bk,L,L014
+97,Myrtle Av,Bk,J,J020
+128,Myrtle-Wyckoff Avs,Bk,L,L011
+136,New Lots Av,Bk,L,L003
+269,Northern Blvd,Q,E,E015
+88,Norwood Av,Bk,J,J011
+179,Nostrand Av,Bk,A,A031
+195,Ozone Park-Lefferts Blvd,Q,A,A015
+273,Queens Plaza,Q,E,E019
+182,Ralph Av,Bk,A,A028
+183,Rockaway Av,Bk,A,A027
+192,Rockaway Blvd,Q,A,A018
+203,Rockaway Park-Beach 116 St,Q,A,A007
+187,Shepherd Av,Bk,A,A023
+168,Spring St,M,A:E,A041:E030
+271,Steinway St,Q,E,E017
+279,Sutphin Blvd-Archer Av-JFK Airport,Q,E:J,J002:E002
+134,Sutter Av,Bk,L,L005
+181,Utica Av,Bk,A,A029
+186,Van Siclen Av,Bk,A,A024
+90,Van Siclen Av,Bk,J,J013
+167,W 4 St-Wash Sq,M,A:E,A042:E029
+130,Wilson Av,Bk,L,L009
+264,Woodhaven Blvd,Q,E,E010
+83,Woodhaven Blvd,Q,J,J006
+171,World Trade Center,M,E,E032
