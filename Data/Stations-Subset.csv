@@ -24,7 +24,7 @@
 272,36 St,Q,E,E018
 163,42 St-Port Authority Bus Terminal,M,A:E,A046:E025
 270,46 St,Q,E,E016
-276,5 Av/53 St,M,E,E022
+276,5 Av-53 St,M,E,E022
 162,50 St,M,A:E,A047:E024
 161,59 St-Columbus Circle,M,A,A048
 116,6 Av,M,L,L023
@@ -64,7 +64,7 @@
 169,Canal St,M,A:E,A040:E031
 104,Canal St,M,J,J027
 138,Canarsie-Rockaway Pkwy,Bk,L,L001
-155,Cathedral Pkwy (110 St),M,A,A054
+155,Cathedral Pkwy,M,A,A054
 170,Chambers St,M,A,A039
 105,Chambers St,M,J,J028
 93,Chauncey St,Bk,J,J016
@@ -98,7 +98,7 @@
 175,Hoyt-Schermerhorn Sts,Bk,A,A035
 143,Inwood-207 St,M,A,A066
 267,Jackson Hts-Roosevelt Av,Q,E,E013
-278,Jamaica Center-Parsons/Archer,Q,E:J,J001:E001
+278,Jamaica Center-Parsons-Archer,Q,E:J,J001:E001
 280,Jamaica-Van Wyck,Q,E,E003
 174,Jay St-MetroTech,Bk,A,A036
 126,Jefferson St,Bk,L,L013
@@ -106,7 +106,7 @@
 180,Kingston-Throop Avs,Bk,A,A030
 96,Kosciuszko St,Bk,J,J019
 176,Lafayette Av,Bk,A,A034
-275,Lexington Av/53 St,M,E,E021
+275,Lexington Av-53 St,M,E,E021
 185,Liberty Av,Bk,A,A025
 135,Livonia Av,Bk,L,L004
 99,Lorimer St,Bk,J,J022
