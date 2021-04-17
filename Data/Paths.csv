@@ -1,2 +1,2 @@
-﻿StartID,StopID
-209,208
+﻿startid,stopid,startnode,stopnode
+209,208,A001,A002
