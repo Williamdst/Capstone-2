@@ -1,4 +1,4 @@
-﻿stationid,stopname,borough,routes,nodes
+﻿stationID,stopName,borough,routes,nodes
 209,Far Rockaway-Mott Av,Queens,A,A001
 208,Beach 25 St,Queens,A,A002
 207,Beach 36 St,Queens,A,A003
