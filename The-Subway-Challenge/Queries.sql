@@ -1,15 +1,15 @@
 //The Query to Load the Stations in the Graph Database
 
-LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Stations-Subset.csv' AS row
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/Williamdst/Capstone-2/main/The-Subway-Challenge/Stations-Decision-Points.csv' AS row
 MERGE (s:Stations {name:row.stopName, ID:toInteger(row.stationID), borough:row.borough, routes: split(row.routes, ':'), nodes: split(row.nodes, ':')});
 
 
 //The Query to Load the Relationships in the Graph Database
 
-LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Forward.csv" AS row
+LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/The-Subway-Challenge/Paths-Decision-Points.csv" AS row
 MATCH (s1:Stations {ID:toInteger(row.startID)})
 MATCH (s2:Stations {ID:toInteger(row.stopID)})
-MERGE (s1)-[adj:Adjacent {line:row.line, cost:toInteger(row.cost)}]->(s2);
+MERGE (s1)-[adj:Adjacent]->(s2);
 
 //The Query is the same, but in the file the headers are switched and modifications are made
 //LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Backward.csv" AS row
