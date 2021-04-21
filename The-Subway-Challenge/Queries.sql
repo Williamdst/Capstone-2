@@ -37,7 +37,7 @@ SET s1:L;
 -------------------------------------
 
 // Query to run minimum spanning tree
-MATCH (n:Stations {ID: '209'})
+MATCH (n:Stations {ID: 209})
 CALL gds.alpha.spanningTree.minimum.write({
     nodeProjection:'Stations',
     relationshipProjection: { 
@@ -59,6 +59,7 @@ RETURN createMillis, computeMillis, writeMillis, effectiveNodeCount
 
 
 // Query to return the start and stop 
+MATCH path = (s:Stations {ID: 209})-[:MINST*]-()
 WITH relationships(path) as rels
 UNWIND rels as rel
 with distinct rel as rel

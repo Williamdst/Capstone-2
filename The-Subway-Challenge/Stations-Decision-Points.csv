@@ -1,0 +1,18 @@
+﻿stationID,stopName,borough,routes,nodes
+209,Far Rockaway-Mott Av,Queens,A,A001
+203,Rockaway Park-Beach 116 St,Queens,A,A002
+199,Broad Channel,Queens,A,A003
+195,Ozone Park-Lefferts Blvd,Queens,A,A004
+192,Rockaway Blvd,Queens,A,A005
+184,Broadway Junction,Brooklyn,A:J:L,A006:J003:L002
+172,Fulton St,Manhattan,A:J,A007:J004
+169,Canal St,Manhattan,A:E,A008:E005
+166,14 St,Manhattan,A:E,A009:E004
+162,50 St,Manhattan,A:E,A010:E003
+143,Inwood-207 St,Manhattan,A,A011
+171,World Trade Center,Manhattan,E,E006
+278,Jamaica Center-Parsons-Archer,Queens,E:J,J001:E001
+279,Sutphin Blvd-Archer Av-JFK Airport,Queens,E:J,J002:E002
+107,Broad St,Manhattan,J,J005
+138,Canarsie-Rockaway Pkwy,Brooklyn,L,L001
+115,8 Av,Manhattan,L,L003
