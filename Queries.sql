@@ -1,16 +1,21 @@
 //The Query to Load the Stations in the Graph Database
 
-LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Stations-Decision-Points.csv' AS row
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Stations-Subset.csv' AS row
 MERGE (s:Stations {name:row.stopName, ID:row.stationID, borough:row.borough, routes: split(row.routes, ':'), nodes: split(row.nodes, ':')});
 
 
 //The Query to Load the Relationships in the Graph Database
 
-LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Decision-Points.csv" AS row
+LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Forward.csv" AS row
 MATCH (s1:Stations {ID:row.startID})
 MATCH (s2:Stations {ID:row.stopID})
-MERGE (s1)-[adj:Adjacent {line:row.line}]->(s2);
+MERGE (s1)-[adj:Adjacent]->(s2);
 
+//The Query is the same, but in the file the headers are switched and modifications are made
+LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Backward.csv" AS row
+MATCH (s1:Stations {ID:row.startID})
+MATCH (s2:Stations {ID:row.stopID})
+MERGE (s1)-[adj:Adjacent]->(s2);
 
 //Add Labels to the Nodes
 MATCH (s1:Stations)
