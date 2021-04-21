@@ -41,7 +41,7 @@
 169,Canal St,Manhattan,A:E,A040:E031,2
 168,Spring St,Manhattan,A:E,A041:E030,1
 167,W 4 St-Wash Sq,Manhattan,A:E,A042:E029,2
-166,14 St,Manhattan,A:E,A043:E028,2
+166,14 St-8 Av,Manhattan,A:E:L,A043:E028:L024,2
 165,23 St,Manhattan,A:E,A044:E027,2
 164,34 St-Penn Station,Manhattan,A:E,A045:E026,2
 163,42 St-Port Authority Bus Terminal,Manhattan,A:E,A046:E025,1
@@ -137,4 +137,3 @@
 118,3 Av,Manhattan,L,L021,1
 117,14 St-Union Sq.,Manhattan,L,L022,4
 116,6 Av,Manhattan,L,L023,2
-115,8 Av,Manhattan,L,L024,2
