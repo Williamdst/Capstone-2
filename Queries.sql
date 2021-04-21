@@ -12,10 +12,10 @@ MATCH (s2:Stations {ID:row.stopID})
 MERGE (s1)-[adj:Adjacent]->(s2);
 
 //The Query is the same, but in the file the headers are switched and modifications are made
-LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Backward.csv" AS row
-MATCH (s1:Stations {ID:row.startID})
-MATCH (s2:Stations {ID:row.stopID})
-MERGE (s1)-[adj:Adjacent]->(s2);
+//LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Backward.csv" AS row
+//MATCH (s1:Stations {ID:row.startID})
+//MATCH (s2:Stations {ID:row.stopID})
+//MERGE (s1)-[adj:Adjacent]->(s2);
 
 //Add Labels to the Nodes
 MATCH (s1:Stations)
