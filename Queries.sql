@@ -34,3 +34,29 @@ MATCH (s1:Stations)
 WHERE 'L' in s1.routes
 SET s1:L;
 
+-------------------------------------
+
+MATCH (n:Stations {ID: '209'})
+CALL gds.alpha.spanningTree.minimum.write({
+    nodeProjection:'Stations',
+    relationshipProjection: { 
+        LINK: {
+            type: 'Adjacent',
+            orientation: 'UNDIRECTED'
+        }
+    },
+    startNodeId: ID(n),
+    writeProperty: 'MINST',
+    weightWriteProperty: 'writeCost'
+})
+YIELD createMillis, computeMillis, writeMillis, effectiveNodeCount
+RETURN createMillis, computeMillis, writeMillis, effectiveNodeCount
+
+
+
+
+
+WITH relationships(path) as rels
+UNWIND rels as rel
+with distinct rel as rel
+return startNode(rel).ID AS source, endNode(rel).ID AS destination, rel.writeCost AS cost
