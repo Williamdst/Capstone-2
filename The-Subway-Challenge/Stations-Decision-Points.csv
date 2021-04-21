@@ -1,4 +1,4 @@
-﻿stationID,stopName,borough,routes,nodes
+﻿stationID,stopName,borough,lines,nodes
 209,Far Rockaway-Mott Av,Queens,A,A001
 203,Rockaway Park-Beach 116 St,Queens,A,A002
 199,Broad Channel,Queens,A,A003
