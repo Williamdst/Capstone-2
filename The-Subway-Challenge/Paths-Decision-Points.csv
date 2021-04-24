@@ -1,4 +1,4 @@
-﻿startID,stopID,startNode,stopNode,routes,cost
+﻿startID,stopID,startNode,stopNode,routes,distance
 209,199,A001,A003,A,12
 203,199,A002,A003,A,9
 199,192,A003,A004,A,13

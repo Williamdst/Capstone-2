@@ -1,14 +1,12 @@
 import logging
-import pkg_resources
 from postman_problems.solver import cpp
 from postman_problems.stats import calculate_postman_solution_stats
 
+
 def main():
-    EDGELIST = pkg_resources.resource_filename('postman_problems',
-                                               'examples/sleeping_giant/edgelist_sleeping_giant.csv')
-    NODELIST = pkg_resources.resource_filename('postman_problems',
-                                               'examples/sleeping_giant/nodelist_sleeping_giant.csv')
-    START_NODE = "b_end_east"
+    EDGELIST = 'Paths-Matching-Test.csv'
+    START_NODE = 'A'
+
 
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger(__name__)
