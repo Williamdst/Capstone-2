@@ -1,9 +1,8 @@
 ﻿startID,stopID,distance
 A,B,5
-B,C,1
-B,E,2
+B,E,1
 C,D,3
-C,F,5
-D,E,4
+C,F,14
+D,E,3
 E,F,6
 F,G,5
