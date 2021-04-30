@@ -6,7 +6,7 @@
 406,14 St-Union Sq,Manhattan,X4:X6:L,4006:6002:L004
 15,14 St-Union Sq,Manhattan,N:Q,N008:Q007
 151,145 St,Manhattan,A:D,A015:D010
-219,161 St-Yankee Stadium,Bronx,04:D,4009:D011
+219,161 St-Yankee Stadium,Bronx,X4:D,4009:D011
 148,168 St,Manhattan,X1:A,1006:A016
 227,34 St-Herald Sq,Manhattan,D:F:N:Q,D006:F006:N009:Q008
 471,34 St-Hudson Yards,Manhattan,X7,7006
@@ -22,7 +22,7 @@
 310,96 St,Manhattan,X1:X2:X3,1005:2008:3002
 475,96 St,Manhattan,Q,Q012
 1,Astoria-Ditmars Blvd,Queens,N,N012
-338,Atlantic Av-Barclays Ctr,Brooklyn,X2:04:Q,2003:4003:Q004
+338,Atlantic Av-Barclays Ctr,Brooklyn,X2:X4:Q,2003:4003:Q004
 39,Bay Ridge-95 St,Brooklyn,R,R001
 236,Bergen St,Brooklyn,F:G,F012:G002
 415,Borough Hall,Brooklyn,X2:X4,2004:4004

@@ -93,34 +93,3 @@ SET s1:R;
 MATCH (s1:Stations)
 WHERE 'S' in s1.lines
 SET s1:S;
-
--------------------------------------
-
-// Query to run minimum spanning tree
-MATCH (n:Stations {ID: 209})
-CALL gds.alpha.spanningTree.minimum.write({
-    nodeProjection:'Stations',
-    relationshipProjection: { 
-        LINK: {
-            type: 'LINK',
-			properties: 'cost',
-            orientation: 'UNDIRECTED'
-        }
-    },
-    startNodeId: ID(n),
-	relationshipWeightProperty: 'cost',
-    writeProperty: 'MINST',
-    weightWriteProperty: 'writeCost'
-})
-YIELD createMillis, computeMillis, writeMillis, effectiveNodeCount
-RETURN createMillis, computeMillis, writeMillis, effectiveNodeCount
-
-
-
-
-// Query to return the start and stop 
-MATCH path = (s:Stations {ID: 209})-[:MINST*]-()
-WITH relationships(path) as rels
-UNWIND rels as rel
-with distinct rel as rel
-return startNode(rel).ID AS source, endNode(rel).ID AS destination, rel.writeCost AS cost
