@@ -9,7 +9,7 @@ MERGE (s:Stations {name:row.stopName, ID:toInteger(row.stationID), borough:row.b
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Decision-Points.csv" AS row
 MATCH (s1:Stations {ID:toInteger(row.startID)})
 MATCH (s2:Stations {ID:toInteger(row.stopID)})
-MERGE (s1)-[rel:LINK {routes:split(row.routes, ':')}]->(s2);
+MERGE (s1)-[rel:LINK {routes:split(row.routes, ':')}]-(s2);
 
 //The Query is the same, but in the file the headers are switched and modifications are made
 //LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Backward.csv" AS row
@@ -17,7 +17,35 @@ MERGE (s1)-[rel:LINK {routes:split(row.routes, ':')}]->(s2);
 //MATCH (s2:Stations {ID:row.stopID})
 //MERGE (s1)-[rel:LINK {routes:split(row.routes, ':'), cost:toInteger(row.distance)}]->(s2);
 
-Add Labels to the Nodes
+//Add Labels to the Nodes
+MATCH (s1:Stations)
+WHERE '1' in s1.lines
+SET s1:One;
+
+MATCH (s1:Stations)
+WHERE '2' in s1.lines
+SET s1:Two;
+
+MATCH (s1:Stations)
+WHERE '3' in s1.lines
+SET s1:Three;
+
+MATCH (s1:Stations)
+WHERE '4' in s1.lines
+SET s1:Four;
+
+MATCH (s1:Stations)
+WHERE '5' in s1.lines
+SET s1:Five;
+
+MATCH (s1:Stations)
+WHERE '6' in s1.lines
+SET s1:Six;
+
+MATCH (s1:Stations)
+WHERE '7' in s1.lines
+SET s1:Seven;
+
 MATCH (s1:Stations)
 WHERE 'A' in s1.lines
 SET s1:A;
@@ -27,12 +55,44 @@ WHERE 'E' in s1.lines
 SET s1:E;
 
 MATCH (s1:Stations)
+WHERE 'D' in s1.lines
+SET s1:D;
+
+MATCH (s1:Stations)
+WHERE 'F' in s1.lines
+SET s1:F;
+
+MATCH (s1:Stations)
+WHERE 'M' in s1.lines
+SET s1:M;
+
+MATCH (s1:Stations)
+WHERE 'G' in s1.lines
+SET s1:G;
+
+MATCH (s1:Stations)
 WHERE 'J' in s1.lines
 SET s1:J;
 
 MATCH (s1:Stations)
 WHERE 'L' in s1.lines
 SET s1:L;
+
+MATCH (s1:Stations)
+WHERE 'N' in s1.lines
+SET s1:N;
+
+MATCH (s1:Stations)
+WHERE 'Q' in s1.lines
+SET s1:Q;
+
+MATCH (s1:Stations)
+WHERE 'R' in s1.lines
+SET s1:R;
+
+MATCH (s1:Stations)
+WHERE 'S' in s1.lines
+SET s1:S;
 
 -------------------------------------
 
