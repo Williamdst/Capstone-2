@@ -19,31 +19,31 @@ MERGE (s1)-[rel:LINK {routes:split(row.routes, ':')}]-(s2);
 
 //Add Labels to the Nodes
 MATCH (s1:Stations)
-WHERE '1' in s1.lines
+WHERE 'X1' in s1.lines
 SET s1:One;
 
 MATCH (s1:Stations)
-WHERE '2' in s1.lines
+WHERE 'X2' in s1.lines
 SET s1:Two;
 
 MATCH (s1:Stations)
-WHERE '3' in s1.lines
+WHERE 'X3' in s1.lines
 SET s1:Three;
 
 MATCH (s1:Stations)
-WHERE '4' in s1.lines
+WHERE 'X4' in s1.lines
 SET s1:Four;
 
 MATCH (s1:Stations)
-WHERE '5' in s1.lines
+WHERE 'X5' in s1.lines
 SET s1:Five;
 
 MATCH (s1:Stations)
-WHERE '6' in s1.lines
+WHERE 'X6' in s1.lines
 SET s1:Six;
 
 MATCH (s1:Stations)
-WHERE '7' in s1.lines
+WHERE 'X7' in s1.lines
 SET s1:Seven;
 
 MATCH (s1:Stations)
