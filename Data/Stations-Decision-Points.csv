@@ -13,7 +13,7 @@
 32,36 St,Brooklyn,D:N:R,D002:N003:R003
 225,47-50 Sts-Rockefeller Ctr,Manhattan,D:F,D007:F005
 162,50 St,Manhattan,A:E,A013:E006
-9,57 St-7 Av,Manhattan,N:Q,N010:Q010
+9,57 St-7 Av,Manhattan,N:Q,N011:Q010
 35,59 St,Brooklyn,N:R,N002:R002
 161,59 St-Columbus Circle,Manhattan,X1:X2:A:D,1004:2007:A014:D009
 116,6 Av,Manhattan,L,L005
@@ -21,7 +21,7 @@
 115,8 Av,Manhattan,L,L006
 310,96 St,Manhattan,X1:X2:X3,1005:2008:3002
 475,96 St,Manhattan,Q,Q012
-1,Astoria-Ditmars Blvd,Queens,N,N012
+1,Astoria-Ditmars Blvd,Queens,N,N013
 338,Atlantic Av-Barclays Ctr,Brooklyn,X2:X4:Q,2003:4003:Q004
 39,Bay Ridge-95 St,Brooklyn,R,R001
 236,Bergen St,Brooklyn,F:G,F012:G002
@@ -65,7 +65,7 @@
 195,Ozone Park-Lefferts Blvd,Queens,A,A004
 360,Pelham Bay Park,Bronx,X6,6005
 42,Prospect Park,Brooklyn,Q:S,Q003:S001
-461,Queensboro Plaza,Queens,X7:N,7002:N011
+461,Queensboro Plaza,Queens,X7:N,7002:N012
 192,Rockaway Blvd,Queens,A,A005
 203,Rockaway Park-Beach 116 St,Queens,A,A002
 330,South Ferry,Manhattan,X1,1001
