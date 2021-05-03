@@ -9,7 +9,7 @@ MERGE (s:Stations {name:row.stopName, ID:toInteger(row.stationID), borough:row.b
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Decision-Points.csv" AS row
 MATCH (s1:Stations {ID:toInteger(row.startID)})
 MATCH (s2:Stations {ID:toInteger(row.stopID)})
-MERGE (s1)-[rel:LINK {routes:split(row.routes, ':') start:split(row.startNode, ':'), stop:split(row.stopNode, ':')}]-(s2);
+MERGE (s1)-[rel:LINK {routes:split(row.routes, ':'), start:split(row.startNode, ':'), stop:split(row.stopNode, ':')}]-(s2);
 
 //The Query is the same, but in the file the headers are switched and modifications are made
 //LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Paths-Backward.csv" AS row
@@ -20,31 +20,31 @@ MERGE (s1)-[rel:LINK {routes:split(row.routes, ':') start:split(row.startNode, '
 //Add Labels to the Nodes
 MATCH (s1:Stations)
 WHERE 'X1' in s1.lines
-SET s1:One;
+SET s1:X1;
 
 MATCH (s1:Stations)
 WHERE 'X2' in s1.lines
-SET s1:Two;
+SET s1:X2;
 
 MATCH (s1:Stations)
 WHERE 'X3' in s1.lines
-SET s1:Three;
+SET s1:X3;
 
 MATCH (s1:Stations)
 WHERE 'X4' in s1.lines
-SET s1:Four;
+SET s1:X4;
 
 MATCH (s1:Stations)
 WHERE 'X5' in s1.lines
-SET s1:Five;
+SET s1:X5;
 
 MATCH (s1:Stations)
 WHERE 'X6' in s1.lines
-SET s1:Six;
+SET s1:X6;
 
 MATCH (s1:Stations)
 WHERE 'X7' in s1.lines
-SET s1:Seven;
+SET s1:X7;
 
 MATCH (s1:Stations)
 WHERE 'A' in s1.lines
