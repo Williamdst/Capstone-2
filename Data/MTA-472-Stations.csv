@@ -1,0 +1,473 @@
+Station,Route,Line,Borough
+Fourth Avenue*[^ 4],Culver Line,F:G,Brooklyn
+Seventh Avenue,Brighton Line,B:Q,Brooklyn
+Seventh Avenue,Culver Line,F�,Brooklyn
+Eighth Avenue,Sea Beach Line,N:W,Brooklyn
+Ninth Avenue,West End Line,D,Brooklyn
+Ninth Street*[^ 4],Fourth Avenue Line,D:N:R:W,Brooklyn
+15th Street–Prospect Park,Culver Line,F:G,Brooklyn
+18th Avenue,Culver Line,F,Brooklyn
+18th Avenue,Sea Beach Line,N:W,Brooklyn
+18th Avenue,West End Line,D,Brooklyn
+20th Avenue,Sea Beach Line,N:W,Brooklyn
+20th Avenue,West End Line,D,Brooklyn
+25th Avenue,West End Line,D,Brooklyn
+25th Street,Fourth Avenue Line,D:N:R:W,Brooklyn
+36th Street**,Fourth Avenue Line,D:N:R:W,Brooklyn
+45th Street,Fourth Avenue Line,N:R:W,Brooklyn
+50th Street,West End Line,D,Brooklyn
+53rd Street,Fourth Avenue Line,N:R:W,Brooklyn
+55th Street,West End Line,D,Brooklyn
+59th Street**,Fourth Avenue Line,N:R:W,Brooklyn
+62nd Street*[^ 5],West End Line,D,Brooklyn
+71st Street,West End Line,D,Brooklyn
+77th Street,Fourth Avenue Line,R,Brooklyn
+79th Street,West End Line,D,Brooklyn
+86th Street,Fourth Avenue Line,R,Brooklyn
+86th Street,Sea Beach Line,N:W,Brooklyn
+Alabama Avenue,Jamaica Line,J:�Z,Brooklyn
+Atlantic Avenue,Canarsie Line,L,Brooklyn
+Atlantic Avenue–Barclays Center*[^ 6],Brighton Line,B:Q,Brooklyn
+Atlantic Avenue–Barclays Center**[^ 6][^ 7],Eastern Parkway Line,X2:X3:X4:X5,Brooklyn
+Atlantic Avenue–Barclays Center**‡[^ 6],Fourth Avenue Line,D:N:R:W,Brooklyn
+Avenue H,Brighton Line,Q,Brooklyn
+Avenue I,Culver Line,F,Brooklyn
+Avenue J,Brighton Line,Q,Brooklyn
+Avenue M,Brighton Line,Q,Brooklyn
+Avenue N,Culver Line,F,Brooklyn
+Avenue P,Culver Line,F,Brooklyn
+Avenue U,Brighton Line,Q,Brooklyn
+Avenue U,Culver Line,F,Brooklyn
+Avenue U,Sea Beach Line,N:W,Brooklyn
+Avenue X,Culver Line,F,Brooklyn
+Bay 50th Street,West End Line,D,Brooklyn
+Bay Parkway,Culver Line,F,Brooklyn
+Bay Parkway,Sea Beach Line,N:W,Brooklyn
+Bay Parkway,West End Line,D,Brooklyn
+Bay Ridge Avenue,Fourth Avenue Line,R,Brooklyn
+Bay Ridge–95th Street†,Fourth Avenue Line,R,Brooklyn
+Bedford Avenue‡,Canarsie Line,L,Brooklyn
+Bedford–Nostrand Avenues,Crosstown Line,G,Brooklyn
+Bergen Street,Culver Line,F:G,Brooklyn
+Bergen Street,Eastern Parkway Line,X2:X3:X4,Brooklyn
+Beverley Road,Brighton Line,Q,Brooklyn
+Beverly Road,Nostrand Avenue Line,X2:X5,Brooklyn
+Borough Hall*[^ 8],Broadway–Seventh Avenue Line,X2:X3,Brooklyn
+Borough Hall*‡[^ 8],Eastern Parkway Line,X4:X5,Brooklyn
+Botanic Garden*[^ 9],Franklin Avenue Line,S,Brooklyn
+Brighton Beach**†,Brighton Line,B:Q,Brooklyn
+Broadway,Crosstown Line,G,Brooklyn
+Broadway Junction*[^ 10],Canarsie Line,L,Brooklyn
+Broadway Junction**[^ 10],Fulton Street Line,A:C,Brooklyn
+Broadway Junction**[^ 10],Jamaica Line,J:Z,Brooklyn
+Bushwick Avenue–Aberdeen Street,Canarsie Line,L,Brooklyn
+Canarsie–Rockaway Parkway†,Canarsie Line,L,Brooklyn
+Carroll Street,Culver Line,F:G,Brooklyn
+Central Avenue,Myrtle Avenue Line,M,Brooklyn
+Chauncey Street,Jamaica Line,J:Z,Brooklyn
+Church Avenue**,Brighton Line,B:Q,Brooklyn
+Church Avenue**†,Culver Line,F:G,Brooklyn
+Church Avenue,Nostrand Avenue Line,X2:X5,Brooklyn
+Clark Street‡,Broadway–Seventh Avenue Line,X2:X3,Brooklyn
+Classon Avenue,Crosstown Line,G,Brooklyn
+Cleveland Street,Jamaica Line,J,Brooklyn
+Clinton–Washington Avenues,Crosstown Line,G,Brooklyn
+Clinton–Washington Avenues,Fulton Street Line,A:C,Brooklyn
+Coney Island–Stillwell Avenue***†,"Brighton Line, Culver Line, Sea Beach Line, West End Line",D:F:N:Q,Brooklyn
+Cortelyou Road,Brighton Line,Q,Brooklyn
+Court Street*‡[^ 8],Fourth Avenue Line,N:R:W,Brooklyn
+Crescent Street**,Jamaica Line,J:Z,Brooklyn
+Crown Heights–Utica Avenue**†,Eastern Parkway Line,X2:X3:X4:X5,Brooklyn
+Cypress Hills‡,Jamaica Line,J,Brooklyn
+DeKalb Avenue***‡,"Fourth Avenue Line, Brighton Line",B:D:N:Q:R:W,Brooklyn
+DeKalb Avenue,Canarsie Line,L,Brooklyn
+Ditmas Avenue,Culver Line,F,Brooklyn
+East 105th Street,Canarsie Line,L,Brooklyn
+Eastern Parkway–Brooklyn Museum,Eastern Parkway Line,X2:X3:X4,Brooklyn
+Euclid Avenue**†,Fulton Street Line,A:C,Brooklyn
+Flatbush Avenue–Brooklyn College†,Nostrand Avenue Line,X2:X5,Brooklyn
+Flushing Avenue,Crosstown Line,G,Brooklyn
+Flushing Avenue,Jamaica Line,J:M,Brooklyn
+Fort Hamilton Parkway,Culver Line,F:G,Brooklyn
+Fort Hamilton Parkway,Sea Beach Line,N:W,Brooklyn
+Fort Hamilton Parkway,West End Line,D,Brooklyn
+Franklin Avenue*†[^ 11],Franklin Avenue Line,S,Brooklyn
+Franklin Avenue*[^ 11],Fulton Street Line,A:C,Brooklyn
+Franklin Avenue–Medgar Evers College*[^ 9],Eastern Parkway Line,X2:X3:X4:X5,Brooklyn
+Fulton Street,Crosstown Line,G,Brooklyn
+Gates Avenue,Jamaica Line,J:Z,Brooklyn
+Graham Avenue,Canarsie Line,L,Brooklyn
+Grand Army Plaza,Eastern Parkway Line,X2:X3:X4,Brooklyn
+Grand Street,Canarsie Line,L,Brooklyn
+Grant Avenue‡,Fulton Street Line,A,Brooklyn
+Greenpoint Avenue‡,Crosstown Line,G,Brooklyn
+Halsey Street,Canarsie Line,L,Brooklyn
+Halsey Street,Jamaica Line,J,Brooklyn
+Hewes Street,Jamaica Line,J:M,Brooklyn
+High Street‡,Eighth Avenue Line,A:C,Brooklyn
+Hoyt Street,Eastern Parkway Line,X2:X3,Brooklyn
+Hoyt–Schermerhorn Streets***,"Crosstown Line, Fulton Street Line",A:C:G,Brooklyn
+Jay Street–MetroTech***[^ 12],"Culver Line, Fulton Street Line",A:C:F�,Brooklyn
+Jay Street–MetroTech*[^ 12],Fourth Avenue Line,N:R:W,Brooklyn
+Jefferson Street,Canarsie Line,L,Brooklyn
+Junius Street,New Lots Line,X2:X3:X4:X5,Brooklyn
+Kings Highway**,Brighton Line,B:Q,Brooklyn
+Kings Highway**†,Culver Line,F,Brooklyn
+Kings Highway,Sea Beach Line,N:W,Brooklyn
+Kingston Avenue,Eastern Parkway Line,X2:X3:X4:X5,Brooklyn
+Kingston–Throop Avenues,Fulton Street Line,A:C,Brooklyn
+Knickerbocker Avenue,Myrtle Avenue Line,M,Brooklyn
+Kosciuszko Street,Jamaica Line,J,Brooklyn
+Lafayette Avenue,Fulton Street Line,A:C,Brooklyn
+Liberty Avenue,Fulton Street Line,A:C,Brooklyn
+Livonia Avenue,Canarsie Line,L,Brooklyn
+Lorimer Street*[^ 13],Canarsie Line,L,Brooklyn
+Lorimer Street,Jamaica Line,J:M,Brooklyn
+Marcy Avenue‡,Jamaica Line,J:M:Z,Brooklyn
+Metropolitan Avenue*[^ 13],Crosstown Line,G,Brooklyn
+Montrose Avenue,Canarsie Line,L,Brooklyn
+Morgan Avenue,Canarsie Line,L,Brooklyn
+Myrtle Avenue**†,Jamaica Line,J:M:Z,Brooklyn
+Myrtle–Willoughby Avenues,Crosstown Line,G,Brooklyn
+Myrtle–Wyckoff Avenues*[^ 14],Canarsie Line,L,Brooklyn
+Myrtle–Wyckoff Avenues*‡[^ 14],Myrtle Avenue Line,M,Brooklyn
+Nassau Avenue,Crosstown Line,G,Brooklyn
+Neck Road,Brighton Line,Q,Brooklyn
+Neptune Avenue,Culver Line,F,Brooklyn
+Nevins Street**,Eastern Parkway Line,X2:X3:X4:X5,Brooklyn
+New Lots Avenue,Canarsie Line,L,Brooklyn
+New Lots Avenue†,New Lots Line,X2:X3:X4:X5,Brooklyn
+New Utrecht Avenue*[^ 5],Sea Beach Line,N:W,Brooklyn
+Newkirk Avenue,Nostrand Avenue Line,X2:X5,Brooklyn
+Norwood Avenue,Jamaica Line,J:Z,Brooklyn
+Newkirk Plaza**,Brighton Line,B:Q,Brooklyn
+Nostrand Avenue,Eastern Parkway Line,X2:X3:X4:X5,Brooklyn
+Nostrand Avenue**,Fulton Street Line,A:C,Brooklyn
+Ocean Parkway,Brighton Line,Q,Brooklyn
+Park Place,Franklin Avenue Line,S,Brooklyn
+Parkside Avenue,Brighton Line,Q,Brooklyn
+Pennsylvania Avenue,New Lots Line,X2:X3:X4:X5,Brooklyn
+President Street–Medgar Evers College,Nostrand Avenue Line,X2:X5,Brooklyn
+Prospect Avenue,Fourth Avenue Line,D:N:R:W,Brooklyn
+Prospect Park***†,"Brighton Line, Franklin Avenue Line",B:Q:S,Brooklyn
+Ralph Avenue,Fulton Street Line,A:C,Brooklyn
+Rockaway Avenue,Fulton Street Line,A:C,Brooklyn
+Rockaway Avenue,New Lots Line,X2:X3:X4:X5,Brooklyn
+Saratoga Avenue,New Lots Line,X2:X3:X4:X5,Brooklyn
+Sheepshead Bay**,Brighton Line,B:Q,Brooklyn
+Shepherd Avenue,Fulton Street Line,A:C,Brooklyn
+Smith–Ninth Streets,Culver Line,F:G,Brooklyn
+Sterling Street,Nostrand Avenue Line,X2:X5,Brooklyn
+Sutter Avenue,Canarsie Line,L,Brooklyn
+Sutter Avenue–Rutland Road,New Lots Line,X2:X3:X4:X5,Brooklyn
+Union Street,Fourth Avenue Line,D:N:R:W,Brooklyn
+Utica Avenue**,Fulton Street Line,A:C,Brooklyn
+Van Siclen Avenue,Fulton Street Line,A:C,Brooklyn
+Van Siclen Avenue,Jamaica Line,J:Z,Brooklyn
+Van Siclen Avenue,New Lots Line,X2:X3:X4:X5,Brooklyn
+West Eighth Street–New York Aquarium***,"Brighton Line, Culver Line",F:Q,Brooklyn
+Wilson Avenue,Canarsie Line,L,Brooklyn
+Winthrop Street,Nostrand Avenue Line,X2:X5,Brooklyn
+York Street‡,Sixth Avenue Line,F,Brooklyn
+Third Avenue–138th Street**‡,Pelham Line,X6,Bronx
+Third Avenue–149th Street**,White Plains Road Line,X2:X5,Bronx
+138th Street–Grand Concourse‡,Jerome Avenue Line,X4:X5,Bronx
+149th Street–Grand Concourse*[^ 2],Jerome Avenue Line,X4,Bronx
+149th Street–Grand Concourse*‡[^ 2],White Plains Road Line,X2:X5,Bronx
+161st Street–Yankee Stadium*‡[^ 3],Concourse Line,B:D,Bronx
+161st Street–Yankee Stadium*[^ 3],Jerome Avenue Line,X4,Bronx
+167th Street,Concourse Line,B:D,Bronx
+167th Street,Jerome Avenue Line,X4,Bronx
+170th Street,Concourse Line,B:D,Bronx
+170th Street,Jerome Avenue Line,X4,Bronx
+174th Street,White Plains Road Line,X2:X5,Bronx
+174th–175th Streets,Concourse Line,B:D,Bronx
+176th Street,Jerome Avenue Line,X4,Bronx
+182nd–183rd Streets,Concourse Line,B:D,Bronx
+183rd Street,Jerome Avenue Line,X4,Bronx
+219th Street,White Plains Road Line,X2:X5,Bronx
+225th Street,White Plains Road Line,X2:X5,Bronx
+231st Street‡,Broadway–Seventh Avenue Line,X1,Bronx
+233rd Street,White Plains Road Line,X2:X5,Bronx
+238th Street,Broadway–Seventh Avenue Line,X1,Bronx
+Allerton Avenue,White Plains Road Line,X2:X5,Bronx
+Baychester Avenue,Dyre Avenue Line,X5,Bronx
+Bedford Park Boulevard**†,Concourse Line,B:D,Bronx
+Bedford Park Boulevard–Lehman College,Jerome Avenue Line,X4,Bronx
+Bronx Park East,White Plains Road Line,X2:X5,Bronx
+Brook Avenue,Pelham Line,X6,Bronx
+Buhre Avenue,Pelham Line,X6,Bronx
+Burke Avenue,White Plains Road Line,X2:X5,Bronx
+Burnside Avenue,Jerome Avenue Line,X4,Bronx
+Castle Hill Avenue,Pelham Line,X6,Bronx
+Cypress Avenue,Pelham Line,X6,Bronx
+East 143rd Street–St. Mary's Street,Pelham Line,X6,Bronx
+East 149th Street,Pelham Line,X6,Bronx
+East 180th Street**†,White Plains Road Line,X2:X5,Bronx
+Eastchester–Dyre Avenue†,Dyre Avenue Line,X5,Bronx
+Elder Avenue,Pelham Line,X6,Bronx
+Fordham Road**,Concourse Line,B:D,Bronx
+Fordham Road,Jerome Avenue Line,X4,Bronx
+Freeman Street,White Plains Road Line,X2:X5,Bronx
+Gun Hill Road,Dyre Avenue Line,X5,Bronx
+Gun Hill Road,White Plains Road Line,X2:X5,Bronx
+Hunts Point Avenue**,Pelham Line,X6,Bronx
+Intervale Avenue,White Plains Road Line,X2:X5,Bronx
+Jackson Avenue,White Plains Road Line,X2:X5,Bronx
+Kingsbridge Road**,Concourse Line,B:D,Bronx
+Kingsbridge Road,Jerome Avenue Line,X4,Bronx
+Longwood Avenue,Pelham Line,X6,Bronx
+Middletown Road,Pelham Line,X6,Bronx
+Morris Park,Dyre Avenue Line,X5,Bronx
+Morrison Avenue–Soundview,Pelham Line,X6,Bronx
+Mosholu Parkway,Jerome Avenue Line,X4,Bronx
+Mount Eden Avenue,Jerome Avenue Line,X4,Bronx
+Nereid Avenue**†,White Plains Road Line,X2:X5,Bronx
+Norwood–205th Street†,Concourse Line,D,Bronx
+Parkchester**†,Pelham Line,X6,Bronx
+Pelham Bay Park†,Pelham Line,X6,Bronx
+Pelham Parkway,Dyre Avenue Line,X5,Bronx
+Pelham Parkway,White Plains Road Line,X2:X5,Bronx
+Prospect Avenue,White Plains Road Line,X2:X5,Bronx
+Simpson Street,White Plains Road Line,X2:X5,Bronx
+St. Lawrence Avenue,Pelham Line,X6,Bronx
+Tremont Avenue**‡,Concourse Line,B:D,Bronx
+Van Cortlandt Park–242nd Street†,Broadway–Seventh Avenue Line,X1,Bronx
+Wakefield–241st Street†,White Plains Road Line,X2,Bronx
+West Farms Square–East Tremont Avenue,White Plains Road Line,X2:X5,Bronx
+Westchester Square–East Tremont Avenue,Pelham Line,X6,Bronx
+Whitlock Avenue,Pelham Line,X6,Bronx
+Woodlawn†,Jerome Avenue Line,X4,Bronx
+Zerega Avenue,Pelham Line,X6,Bronx
+First Avenue‡,Canarsie Line,L,Manhattan
+Second Avenue,Sixth Avenue Line,F,Manhattan
+Third Avenue,Canarsie Line,L,Manhattan
+Fifth Avenue/53rd Street,Queens Boulevard Line,E:M,Manhattan
+Fifth Avenue–59th Street,Broadway Line,N:R:W,Manhattan
+Fifth Avenue*[^ 6],Flushing Line,X7,Manhattan
+Sixth Avenue*[^ 7],Canarsie Line,L,Manhattan
+Seventh Avenue***,"Sixth Avenue Line, Queens Boulevard Line",B:D:E,Manhattan
+Eighth Avenue*†[^ 8],Canarsie Line,L,Manhattan
+Eighth Street–New York University,Broadway Line,N:Q:R:W,Manhattan
+14th Street*[^ 7],Sixth Avenue Line,F:M,Manhattan
+14th Street**[^ 8],Eighth Avenue Line,A:C:E,Manhattan
+14th Street**[^ 7],Broadway–Seventh Avenue Line,X1:X2:X3,Manhattan
+14th Street–Union Square**[^ 9],Broadway Line,N:Q:R:W,Manhattan
+14th Street–Union Square*[^ 9],Canarsie Line,L,Manhattan
+14th Street–Union Square**[^ 9],Lexington Avenue Line,X4:X5:X6�,Manhattan
+18th Street,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+23rd Street,Sixth Avenue Line,F:M,Manhattan
+23rd Street,Eighth Avenue Line,A:C:E,Manhattan
+23rd Street,Broadway Line,N:Q:R:W,Manhattan
+23rd Street,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+23rd Street,Lexington Avenue Line,X4:X6�,Manhattan
+28th Street,Broadway Line,N:Q:R:W,Manhattan
+28th Street,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+28th Street,Lexington Avenue Line,X4:X6�,Manhattan
+33rd Street,Lexington Avenue Line,X4:X6�,Manhattan
+34th Street–Herald Square**[^ 10],Sixth Avenue Line,B:D:F:M,Manhattan
+34th Street–Herald Square**[^ 10],Broadway Line,N:Q:R:W,Manhattan
+34th Street–Hudson Yards†,Flushing Line,X7,Manhattan
+34th Street–Penn Station**[^ 11],Eighth Avenue Line,A:C:E,Manhattan
+34th Street–Penn Station**[^ 11],Broadway–Seventh Avenue Line,X1:X2:X3,Manhattan
+42nd Street–Bryant Park*[^ 6],Sixth Avenue Line,B:D:F:M,Manhattan
+42nd Street–Port Authority Bus Terminal**[^ 12],Eighth Avenue Line,A:C:E,Manhattan
+47th–50th Streets–Rockefeller Center**,Sixth Avenue Line,B:D:F:M,Manhattan
+49th Street,Broadway Line,N:Q:R:W,Manhattan
+50th Street***[^ 13],"Eighth Avenue Line, Queens Boulevard Line",A:C:E,Manhattan
+50th Street,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+51st Street*[^ 14],Lexington Avenue Line,X4:X6�,Manhattan
+57th Street,Sixth Avenue Line,F,Manhattan
+57th Street–Seventh Avenue**†,Broadway Line,N:Q:R:W,Manhattan
+59th Street**[^ 15][^ 16],Lexington Avenue Line,X4:X5:X6�,Manhattan
+59th Street–Columbus Circle**[^ 17],Eighth Avenue Line,A:B:C:D,Manhattan
+59th Street–Columbus Circle*[^ 17],Broadway–Seventh Avenue Line,X1:X2,Manhattan
+66th Street–Lincoln Center,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+68th Street–Hunter College,Lexington Avenue Line,X4:X6�,Manhattan
+72nd Street,Second Avenue Line,N:Q:R,Manhattan
+72nd Street,Eighth Avenue Line,A:B:C,Manhattan
+72nd Street**,Broadway–Seventh Avenue Line,X1:X2:X3,Manhattan
+77th Street,Lexington Avenue Line,X4:X6�,Manhattan
+79th Street,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+81st Street–Museum of Natural History,Eighth Avenue Line,A:B:C,Manhattan
+86th Street,Second Avenue Line,N:Q:R,Manhattan
+86th Street,Eighth Avenue Line,A:B:C,Manhattan
+86th Street,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+86th Street**,Lexington Avenue Line,X4:X5:X6�,Manhattan
+96th Street†,Second Avenue Line,N:Q:R,Manhattan
+96th Street,Eighth Avenue Line,A:B:C,Manhattan
+96th Street**,Broadway–Seventh Avenue Line,X1:X2:X3,Manhattan
+96th Street,Lexington Avenue Line,X4:X6�,Manhattan
+103rd Street,Eighth Avenue Line,A:B:C,Manhattan
+103rd Street,Broadway–Seventh Avenue Line,X1,Manhattan
+103rd Street,Lexington Avenue Line,X4:X6�,Manhattan
+110th Street,Lexington Avenue Line,X4:�X6�,Manhattan
+116th Street,Eighth Avenue Line,A:B:C,Manhattan
+116th Street,Lenox Avenue Line,X2:X3,Manhattan
+116th Street,Lexington Avenue Line,X4:X6�,Manhattan
+116th Street–Columbia University,Broadway–Seventh Avenue Line,X1,Manhattan
+125th Street**,Eighth Avenue Line,A:B:C:D,Manhattan
+125th Street,Broadway–Seventh Avenue Line,X1,Manhattan
+125th Street,Lenox Avenue Line,X2:X3,Manhattan
+125th Street**‡,Lexington Avenue Line,X4:X5:X6�,Manhattan
+135th Street,Eighth Avenue Line,A:B:C,Manhattan
+135th Street‡,Lenox Avenue Line,X2:X3,Manhattan
+137th Street–City College,Broadway–Seventh Avenue Line,X1,Manhattan
+145th Street***†‡,"Eighth Avenue Line, Concourse Line",A:B:C:D,Manhattan
+145th Street,Broadway–Seventh Avenue Line,X1,Manhattan
+145th Street,Lenox Avenue Line,X3,Manhattan
+155th Street,Eighth Avenue Line,A:C,Manhattan
+155th Street‡,Concourse Line,B:D,Manhattan
+157th Street,Broadway–Seventh Avenue Line,X1,Manhattan
+163rd Street–Amsterdam Avenue,Eighth Avenue Line,A:C,Manhattan
+168th Street**†[^ 19],Eighth Avenue Line,A:C,Manhattan
+168th Street*[^ 19],Broadway–Seventh Avenue Line,X1,Manhattan
+175th Street,Eighth Avenue Line,A,Manhattan
+181st Street,Eighth Avenue Line,A,Manhattan
+181st Street,Broadway–Seventh Avenue Line,X1,Manhattan
+190th Street,Eighth Avenue Line,A,Manhattan
+191st Street,Broadway–Seventh Avenue Line,X1,Manhattan
+207th Street,Broadway–Seventh Avenue Line,X1,Manhattan
+215th Street,Broadway–Seventh Avenue Line,X1,Manhattan
+Astor Place,Lexington Avenue Line,X4:X6�,Manhattan
+Bleecker Street*[^ 20],Lexington Avenue Line,X4:X6�,Manhattan
+Bowery,Nassau Street Line,J:Z,Manhattan
+Bowling Green**†‡,Lexington Avenue Line,X4:X5,Manhattan
+Broad Street**†‡,Nassau Street Line,J:Z,Manhattan
+Broadway–Lafayette Street**[^ 20],Sixth Avenue Line,B:D:F:M,Manhattan
+Brooklyn Bridge–City Hall**†[^ 21],Lexington Avenue Line,X4:X5:X6�,Manhattan
+Canal Street**,Eighth Avenue Line,A:C:E,Manhattan
+Canal Street*[^ 22][^ 23],Broadway Line,N:R:W,Manhattan
+Canal Street*‡[^ 22][^ 23],Broadway Line,N:Q,Manhattan
+Canal Street,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+Canal Street*[^ 22],Lexington Avenue Line,X4:X6�,Manhattan
+Canal Street*[^ 22],Nassau Street Line,J:Z,Manhattan
+Cathedral Parkway–110th Street,Eighth Avenue Line,A:B:C,Manhattan
+Cathedral Parkway–110th Street,Broadway–Seventh Avenue Line,X1,Manhattan
+Central Park North–110th Street,Lenox Avenue Line,X2:X3,Manhattan
+Chambers Street*[^ 24],Eighth Avenue Line,A:C,Manhattan
+Chambers Street**,Broadway–Seventh Avenue Line,X1:X2:X3,Manhattan
+Chambers Street*[^ 21],Nassau Street Line,J:Z,Manhattan
+Christopher Street–Sheridan Square,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+City Hall,Broadway Line,N:R:W,Manhattan
+Cortlandt Street*[^ 24],Broadway Line,N:R:W,Manhattan
+Delancey Street*[^ 25],Sixth Avenue Line,F,Manhattan
+Dyckman Street†,Eighth Avenue Line,A,Manhattan
+Dyckman Street,Broadway–Seventh Avenue Line,X1,Manhattan
+East Broadway‡,Sixth Avenue Line,F,Manhattan
+Essex Street*‡[^ 25],Nassau Street Line,J:M:Z,Manhattan
+Franklin Street,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+Fulton Street*[^ 26],Broadway–Seventh Avenue Line,X2:X3,Manhattan
+Fulton Street*[^ 26],Lexington Avenue Line,X4:X5,Manhattan
+Fulton Street*‡[^ 26],Eighth Avenue Line,A:C,Manhattan
+Fulton Street*[^ 26],Nassau Street Line,J:Z,Manhattan
+Grand Central–42nd Street**[^ 27],Lexington Avenue Line,X4:X5:X6�,Manhattan
+Grand Central*†[^ 27],42nd Street Shuttle,S,Manhattan
+Grand Central*‡[^ 27],Flushing Line,X7,Manhattan
+Grand Street‡,Sixth Avenue Line,B:D,Manhattan
+Harlem–148th Street†,Lenox Avenue Line,X3,Manhattan
+Houston Street,Broadway–Seventh Avenue Line,X1:X2,Manhattan
+Inwood–207th Street†,Eighth Avenue Line,A,Manhattan
+Lexington Avenue/53rd Street*‡[^ 14],Queens Boulevard Line,E:M,Manhattan
+Lexington Avenue/59th Street*‡[^ 15][^ 16],Broadway Line,N:R:W,Manhattan
+Lexington Avenue–63rd Street*[^ 16],63rd Street lines,F:N:Q:R,Manhattan
+Marble Hill–225th Street‡,Broadway–Seventh Avenue Line,X1,Manhattan
+Park Place*[^ 24],Broadway–Seventh Avenue Line,X2:X3,Manhattan
+Prince Street,Broadway Line,N:Q:R:W,Manhattan
+Rector Street,Broadway Line,N:R:W,Manhattan
+Rector Street,Broadway–Seventh Avenue Line,X1,Manhattan
+Roosevelt Island‡,63rd Street Line,F,Manhattan
+South Ferry***†[^ 28],Broadway–Seventh Avenue Line,X1,Manhattan
+Spring Street,Eighth Avenue Line,A:C:E,Manhattan
+Spring Street,Lexington Avenue Line,X4:X6�,Manhattan
+Times Square*†[^ 12],42nd Street Shuttle,S,Manhattan
+Times Square–42nd Street**[^ 12],Flushing Line,X7,Manhattan
+Times Square–42nd Street**[^ 12],Broadway Line,N:Q:R:W,Manhattan
+Times Square–42nd Street**[^ 12],Broadway–Seventh Avenue Line,X1:X2:X3,Manhattan
+Wall Street‡,Broadway–Seventh Avenue Line,X2:X3,Manhattan
+Wall Street,Lexington Avenue Line,X4:X5,Manhattan
+West Fourth Street–Washington Square***,"Sixth Avenue Line, Eighth Avenue Line",A:B:C:D:E:F:M,Manhattan
+Whitehall Street–South Ferry***‡[^ 28],Broadway Line,N:R:W,Manhattan
+World Trade Center*†[^ 24],Eighth Avenue Line,E,Manhattan
+WTC Cortlandt,Broadway–Seventh Avenue Line,X1,Manhattan
+21st Street‡,Crosstown Line,G,Queens
+21st Street–Queensbridge‡,63rd Street Line,F,Queens
+30th Avenue,Astoria Line,N:W,Queens
+33rd Street–Rawson Street,Flushing Line,X7,Queens
+36th Avenue,Astoria Line,N:W,Queens
+36th Street,Queens Boulevard Line,E:M:R,Queens
+39th Avenue,Astoria Line,N:W,Queens
+40th Street–Lowery Street,Flushing Line,X7,Queens
+46th Street,Queens Boulevard Line,E:M:R,Queens
+46th Street–Bliss Street,Flushing Line,X7,Queens
+52nd Street,Flushing Line,X7,Queens
+61st Street–Woodside**,Flushing Line,X7,Queens
+63rd Drive–Rego Park,Queens Boulevard Line,E:M:R,Queens
+65th Street,Queens Boulevard Line,E:M:R,Queens
+67th Avenue,Queens Boulevard Line,E:M:R,Queens
+69th Street,Flushing Line,X7,Queens
+74th Street–Broadway*[^ 2],Flushing Line,X7,Queens
+75th Avenue,Queens Boulevard Line,E:F,Queens
+75th Street–Elderts Lane‡,Jamaica Line,J:Z,Queens
+80th Street‡,Fulton Street Line,A,Queens
+82nd Street–Jackson Heights,Flushing Line,X7,Queens
+85th Street–Forest Parkway,Jamaica Line,J,Queens
+88th Street,Fulton Street Line,A,Queens
+90th Street–Elmhurst Avenue,Flushing Line,X7,Queens
+103rd Street–Corona Plaza,Flushing Line,X7,Queens
+104th Street,Fulton Street Line,A,Queens
+104th Street,Jamaica Line,J:Z,Queens
+111th Street,Flushing Line,X7,Queens
+111th Street,Fulton Street Line,A,Queens
+111th Street,Jamaica Line,J,Queens
+121st Street,Jamaica Line,J:Z,Queens
+169th Street,Queens Boulevard Line,F,Queens
+Aqueduct Racetrack[^ 3],Rockaway Line,A,Queens
+Aqueduct–North Conduit Avenue,Rockaway Line,A,Queens
+Astoria Boulevard,Astoria Line,N:W,Queens
+Astoria–Ditmars Boulevard†,Astoria Line,N:W,Queens
+Beach 25th Street,Rockaway Line,A,Queens
+Beach 36th Street,Rockaway Line,A,Queens
+Beach 44th Street,Rockaway Line,A,Queens
+Beach 60th Street,Rockaway Line,A,Queens
+Beach 67th Street,Rockaway Line,A,Queens
+Beach 90th Street,Rockaway Line,A:S,Queens
+Beach 98th Street,Rockaway Line,A:S,Queens
+Beach 105th Street,Rockaway Line,A:S,Queens
+Briarwood,Queens Boulevard Line,E:F,Queens
+Broad Channel**†,Rockaway Line,A:S,Queens
+Broadway,Astoria Line,N:W,Queens
+Court Square*‡[^ 4],Flushing Line,X7,Queens
+Court Square*†[^ 4],Crosstown Line,G,Queens
+Court Square–23rd Street*‡[^ 4],Queens Boulevard Line,E:M,Queens
+Elmhurst Avenue,Queens Boulevard Line,E:M:R,Queens
+Far Rockaway–Mott Avenue†,Rockaway Line,A,Queens
+Flushing–Main Street†,Flushing Line,X7,Queens
+Forest Avenue,Myrtle Avenue Line,M,Queens
+Forest Hills–71st Avenue**†,Queens Boulevard Line,E:F:M:R,Queens
+Fresh Pond Road,Myrtle Avenue Line,M,Queens
+Grand Avenue–Newtown,Queens Boulevard Line,E:M:R,Queens
+Howard Beach–JFK Airport,Rockaway Line,A,Queens
+Hunters Point Avenue,Flushing Line,X7,Queens
+Jackson Heights–Roosevelt Avenue**[^ 2],Queens Boulevard Line,E:F:M:R,Queens
+Jamaica Center–Parsons/Archer***†,Archer Avenue lines,E:J:Z,Queens
+Jamaica–179th Street†,Queens Boulevard Line,E:F,Queens
+Jamaica–Van Wyck,Archer Avenue Line,E,Queens
+Junction Boulevard**,Flushing Line,X7,Queens
+Kew Gardens–Union Turnpike**,Queens Boulevard Line,E:F�,Queens
+Mets–Willets Point**†,Flushing Line,X7,Queens
+Middle Village–Metropolitan Avenue†,Myrtle Avenue Line,M,Queens
+Northern Boulevard,Queens Boulevard Line,E:M:R,Queens
+Ozone Park–Lefferts Boulevard†,Fulton Street Line,A,Queens
+Parsons Boulevard**,Queens Boulevard Line,E:F,Queens
+Queens Plaza**,Queens Boulevard Line,E:M:R,Queens
+Queensboro Plaza***‡,"Astoria Line (BMT), Flushing Line (IRT)",X7:N:W,Queens
+Rockaway Boulevard*[^ 6],Fulton Street Line,A,Queens
+Rockaway Park–Beach 116th Street†,Rockaway Line,A:S,Queens
+Seneca Avenue‡,Myrtle Avenue Line,M,Queens
+Steinway Street,Queens Boulevard Line,E:M:R,Queens
+Sutphin Boulevard,Queens Boulevard Line,F,Queens
+Sutphin Boulevard–Archer Avenue–JFK Airport***,Archer Avenue lines,E:J:Z,Queens
+Vernon Boulevard–Jackson Avenue‡,Flushing Line,X7,Queens
+Woodhaven Boulevard**,Jamaica Line,J:Z,Queens
+Woodhaven Boulevard,Queens Boulevard Line,E:M:R,Queens
