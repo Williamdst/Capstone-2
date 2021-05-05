@@ -1,13 +1,10 @@
 import sqlite3
-import pymongo
+import pandas as pd
 import os
 
 
 def create_subway_sqlite3(clear_db=False):
-    if 'SubwayChallenge.db' not in os.listdir():
-        conn = sqlite3.connect('SubwayChallenge.db')
-        cursor = conn.cursor()
-    elif clear_db:
+    if 'SubwayChallenge.db' in os.listdir() and clear_db:
         os.remove('SubwayChallenge.db')
         conn = sqlite3.connect('SubwayChallenge.db')
         cursor = conn.cursor()
@@ -17,7 +14,7 @@ def create_subway_sqlite3(clear_db=False):
 
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS routes(
-            path VARCHAR(10),
+            path VARCHAR(10) PRIMARY KEY,
             distance_walked SMALLINT,
             distance_doublebacked SMALLINT,
             distanced_walked_once SMALLINT,
@@ -33,6 +30,26 @@ def create_subway_sqlite3(clear_db=False):
     )
     conn.commit()
     return conn
+
+
+def add_stations_table_sqlite3(conn):
+    with conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS stations(
+                stationid SMALLINT PRIMARY KEY,
+                stopname VARCHAR,
+                borough VARCHAR(12),
+                lines VARCHAR,
+                nodes VARCHAR
+            );"""
+        )
+
+        df = pd.read_csv('./Data/Stations-Decision-Points.csv')
+        df.to_sql('stations', conn, if_exists='replace', index=False)
+        conn.commit()
+
+    return None
 
 
 def insert_into_sqlite3(conn, dict_of_values):
@@ -56,20 +73,19 @@ def insert_into_sqlite3(conn, dict_of_values):
 
     return print(f"Inserted Row for {dict_of_values['path']} and its Statistics into routes table")
 
-def create_subway_mongodb():
-    client = pymongo.MongoClient('localhost', 27017)
 
-    if 'SubwayChallenge' not in client.list_database_names():
-        subwayDB = client.SubwayChallenge
-        return subwayDB
-    else:
-        return client.SubwayChallenge
-
-
-def insert_into_mongo(document_dict, collection, clear_db=False):
-    if clear_db == True:
-        collection.delete_many({})
-
-    collection.insert_one(document_dict)
-
-    return print(f"Inserted Document for Path {document_dict['path']} and its Statistics into {collection}")
+def add_route_ranks(conn):
+    with conn:
+        cursor = conn.cursor
+        cursor.execute("""
+            UPDATE routes
+            SET route_rank = ranking
+            FROM (SELECT 
+                    path, 
+                    dense_rank() over (order by distance_walked) as ranking 
+                  FROM routes
+                  ) as ranking_query
+            WHERE routes.path = ranking_query.path;
+            """)
+        conn.commit()
+    return None
