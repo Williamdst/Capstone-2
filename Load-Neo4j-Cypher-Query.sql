@@ -1,6 +1,6 @@
 //The Query to Load the Stations in the Graph Database
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Data/Stations-Decision-Points.csv' AS row
-MERGE (s:Stations {name:row.stopName, ID:toInteger(row.stationID), borough:row.borough, lines:split(row.lines, ':'), nodes:split(row.nodes, ':')});
+MERGE (s:Stations {name:row.name, ID:toInteger(row.stationID), borough:row.borough, lines:split(row.lines, ':'), nodes:split(row.nodes, ':')});
 
 
 //The Query to Load the Relationships in the Graph Database

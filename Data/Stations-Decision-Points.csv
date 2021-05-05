@@ -1,4 +1,4 @@
-﻿stationID,stopName,borough,lines,nodes
+﻿stationID,station,borough,lines,nodes
 1,Astoria-Ditmars Blvd,Queens,N,N013
 9,57 St-7 Av,Manhattan,N:Q,N011:Q010
 15,14 St-Union Sq,Manhattan,N:Q,N008:Q007

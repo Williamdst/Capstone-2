@@ -38,7 +38,7 @@ def add_stations_table_sqlite3(conn):
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS stations(
                 stationid SMALLINT PRIMARY KEY,
-                stopname VARCHAR,
+                station VARCHAR,
                 borough VARCHAR(12),
                 lines VARCHAR,
                 nodes VARCHAR
