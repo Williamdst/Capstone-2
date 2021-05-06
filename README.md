@@ -4,7 +4,7 @@
     <b> Data Science = Solving Problems = Happiness </b>
 </div>
 <div align='center'>
-    <h1> Te Subway Challenge</h1>
+    <h1> The Subway Challenge</h1>
 </div>
 <div align='center'>
     Denzel S. Williams
