@@ -1,18 +1,15 @@
 import logging
 import itertools
-import sqlite3
-import pandas as pd
 from postman_problems.solver import no_return_cpp
 from postman_problems.stats import calculate_postman_solution_stats
-import database_functions as dbfun
+from Scripts import database_functions as dbfun
 import postman_problems.graph as ppg
-import os
-
 
 def main():
     # Connect to Sqlite3 & create table
     sqlite3_conn = dbfun.create_subway_sqlite3(clear_db=True)
     dbfun.add_stations_table_sqlite3(sqlite3_conn)
+    dbfun.add_edges_table_sqlite3(sqlite3_conn)
 
     edgelist = './Data/Paths-Decision-Points.csv'
 
@@ -48,9 +45,8 @@ def main():
     dbfun.add_route_ranks(sqlite3_conn)
 
 
-if __name__ == '__main__':
-    # Set to True to Create the Databases (~20m)
-    # Otherwise SubwayChallenge.db into SQLite
-    run_main = True
-    if run_main:
-        main()
+# Set to True to Create the Database (~20m)
+# Otherwise Load SubwayChallenge.db into SQLite
+run_main = False
+if __name__ == '__main__' and run_main:
+    main()

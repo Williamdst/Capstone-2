@@ -4,12 +4,12 @@ import os
 
 
 def create_subway_sqlite3(clear_db=False):
-    if 'SubwayChallenge.db' in os.listdir() and clear_db:
-        os.remove('SubwayChallenge.db')
-        conn = sqlite3.connect('SubwayChallenge.db')
+    if 'Subway-Database.db' in os.listdir() and clear_db:
+        os.remove('Subway-Database.db')
+        conn = sqlite3.connect('Subway-Database.db')
         cursor = conn.cursor()
     else:
-        conn = sqlite3.connect('SubwayChallenge.db')
+        conn = sqlite3.connect('Subway-Database.db')
         cursor = conn.cursor()
 
     cursor.execute("""
@@ -27,7 +27,7 @@ def create_subway_sqlite3(clear_db=False):
             edges_walked_required SMALLINT,
             route VARCHAR
         );"""
-    )
+                   )
     conn.commit()
     return conn
 
@@ -43,9 +43,30 @@ def add_stations_table_sqlite3(conn):
                 lines VARCHAR,
                 nodes VARCHAR
             );"""
-        )
+                       )
 
-        df = pd.read_csv('./Data/Stations-Decision-Points.csv')
+        df = pd.read_csv('Data/Stations-Decision-Points.csv')
+        df.to_sql('stations', conn, if_exists='replace', index=False)
+        conn.commit()
+
+    return None
+
+
+def add_edges_table_sqlite3(conn):
+    with conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS edges(
+                startid SMALLINT,
+                stopid SMALLINT,
+                startnode VARCHAR,
+                stopnode VARCHAR,
+                routes VARCHAR,
+                distance SMALLINT
+            );"""
+                       )
+
+        df = pd.read_csv('Data/Paths-Decision-Points.csv')
         df.to_sql('stations', conn, if_exists='replace', index=False)
         conn.commit()
 
@@ -76,16 +97,19 @@ def insert_into_sqlite3(conn, dict_of_values):
 
 def add_route_ranks(conn):
     with conn:
-        cursor = conn.cursor
+        cursor = conn.cursor()
         cursor.execute("""
-            UPDATE routes
-            SET route_rank = ranking
-            FROM (SELECT 
-                    path, 
-                    dense_rank() over (order by distance_walked) as ranking 
-                  FROM routes
-                  ) as ranking_query
-            WHERE routes.path = ranking_query.path;
+            CREATE TABLE routes_rank AS
+                SELECT 
+                  *,
+                  RANK() OVER(ORDER BY distance_walked) as route_rank
+                FROM routes;
             """)
+        conn.commit()
+
+        cursor.execute("DROP TABLE routes;")
+        conn.commit()
+
+        cursor.execute("ALTER TABLE routes_rank RENAME TO routes")
         conn.commit()
     return None
