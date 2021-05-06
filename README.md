@@ -10,7 +10,7 @@
     Denzel S. Williams
 </div>
 <div align='center'>
-    <i>Springboard Data Science Track '20</i>
+    <i>Springboard Data Science Track '21</i>
 </div>
 <div align='center'>
     <a href="https://linkedin.com/in/williamdst">
