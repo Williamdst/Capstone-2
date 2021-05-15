@@ -47,6 +47,6 @@ def main():
 
 # Set to True to Create the Database (~20m)
 # Otherwise Load SubwayChallenge.db into SQLite
-run_main = False
+run_main = True
 if __name__ == '__main__' and run_main:
     main()

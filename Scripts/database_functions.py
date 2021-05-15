@@ -67,7 +67,7 @@ def add_edges_table_sqlite3(conn):
                        )
 
         df = pd.read_csv('Data/Paths-Decision-Points.csv')
-        df.to_sql('stations', conn, if_exists='replace', index=False)
+        df.to_sql('edges', conn, if_exists='replace', index=False)
         conn.commit()
 
     return None
