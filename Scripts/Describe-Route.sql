@@ -1,4 +1,5 @@
---To find the stations for a route change the first WHERE clause to desired path
+-- To find the stations for a route change the first WHERE clause to desired path
+-- Path 418 - 378 is shown.
 WITH RECURSIVE split(path, route, str) AS(
     SELECT
       path,
