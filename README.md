@@ -57,7 +57,66 @@ Of the 79 stations, there were 58 odd-degree nodes resulting in 1653 start-end c
     <p align='center'> Figure 1. Entity Relationship Diagram of the Database </p>
 </p>
 
-
 If you never had to double back and could teleport to whatever station you needed to, the time it would take to traverse each of the 104 edges <b>EXACTLY</b> one time would be 14.75 hours (884m). The rest of the time is spent going back over edges you already traveled; in Matthew Ahn's case that was nearly 7 hours. The columns that are used to pick a route are distance_walked and distance_doublebacked. The reason that edges_walked isn't a major concern is because it matters <b>what</b> edge you had to double back over. You can't make the claim that a route with 150 edges_walked is better than a 151-edge route, because that one edge may be the worst edge in the network.
 
 The node that was in 8 of the 10 top routes, <i>either as the start or the end station</i>, was 416 Wakefield-241 St (The last stop of the 2 train). What's more interesting is that all the nodes paired with it were also extreme stations, meaning, they were at the end of a line. More than that, those extremes were aggressively extreme, not only were they at the end of a line, but they were also at the end of lines that had no transfer opportunities and took over 15m to reach. The route that Matthew took started and ended at two very aggressive extremes and the path that contained those two extremes took 21.06 hours (37th ranked route).
+
+<h4> The "Best" Routes </h4>
+Picking out the best route isn't as straight-forward as querying the database, finding the path with minimal distance, and following the directions. Remember, the program doesn't understand the cost of excessive transfers, that there are transfers that provide shortcuts, and the network topology isn't static. The one major insight that can be used to filter out routes is that aggressively extreme stations are where you want to start and where you want to end, which leaves about only 10 choices (45 configurations). The steps for the best routes aren’t listed in this report because each route has over 145 steps, but there is a <code>Describe-Route.sql</code> file in the repository that contains the query to use to list out all the steps for any path. The most properties of the most interesting paths are shown in the table below:
+
+<table>
+    <tr>
+        <th></th>
+        <th> Start Station </th>
+        <th> Stop Station </th>
+        <th> Time (Hrs) </th>
+        <th> Route Rank </th>
+    </tr>
+    <tr>
+        <th> Gold Route </th>
+        <td>Wakefield-241 St <i>(2-Train)</i></td>
+        <td>Woodlawn <i>(4-Train)</i></td>
+        <td>20.65</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <th> Silver Route </th>
+        <td>Wakefield-241 St <i>(2-Train)</i></td>
+        <td>Norwood-205 St <i>(D-Train)</i></td>
+        <td>20.66</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <th> Bronze Route </th>
+        <td>Wakefield-241 St <i>(2-Train)</i></td>
+        <td>Pelham Bay Park <i>(6-Train)</i></td>
+        <td>20.7</td>
+        <td>3</td>
+    </tr>
+     <tr>
+        <th> The Worst Route </th>
+        <td>Sutphin Blvd-Archer Av-JFK Aiport <i>(E-Train)</i></td>
+        <td>Coney Island-Stillwell Av <i>(D-Train)</i></td>
+        <td>22.35</td>
+        <td>1653</td>
+    </tr>
+    <tr>
+        <th> Matthew Ahn's Route </th>
+        <td>Far Rockaway-Mott Av <i>(A-Train)</i></td>
+        <td>Flushing-Main St <i>(7-Train)</i></td>
+        <td>21.06</td>
+        <td>37</td>
+    </tr>
+    <tr>
+        <th> The Route I May Implement</th>
+        <td>Wakefield-241 St <i>(2-Train)</i></td>
+        <td>Far Rockaway-Mott Av <i>(A-Train)</i></td>
+        <td>20.75</td>
+        <td>4</td>
+    </tr>
+</table>
+
+<div style="line-height:11px">
+    <p style="text-align:right;font-style:italic;color:#c1121f"> <b> Data Science = Solving Problems = Happiness </b> </p>
+    <p style="text-align:right;"> <b> Denzel S. Williams </b> </p>
+</div>
