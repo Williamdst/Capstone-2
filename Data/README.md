@@ -1,3 +1,60 @@
+<div>
+    <h2 align='center'> The Line on the Night Map are Grouped Into Colors </h2>
+</div>
+
+<img align='right' width='400' style="float:right;" src="https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Images/0007.MTA-Night.jpg" />
+
+<div style="text-align:center;margin:0;font-size:12px;color:#c1121f" align='center'>
+    <table>
+    <tr>
+        <th>Red Lines</th>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <th>Green Lines</th>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <th>Purple Line</th>
+        <td>7</td>
+    </tr>
+    <tr>
+        <th>Blue Lines</th>
+        <td>A</td>
+        <td>E</td>
+    </tr>
+    <tr>
+        <th>Orange Lines</th>
+        <td>D</td>
+        <td>F</td>
+        <td>M</td>
+    </tr>
+    <tr>
+        <th>L.Green Line</th>
+        <td>G</td>
+    </tr>
+     <tr>
+        <th>Brown Line</th>
+        <td>J</td>
+    </tr>
+     <tr>
+        <th>Grey Lines</th>
+        <td>L</td>
+        <td>S</td>
+    </tr>
+    <tr>
+        <th>Yellow Lines</th>
+        <td>N</td>
+        <td>Q</td>
+        <td>R</td>
+    </tr>
+</table>
+</div>
+
 <h2>Stations-Decision-Points</h2>
 <i>The 79 juntions where the challenger must make a decision.</i> <br> </br>
 For every decision station on a line, the Station ID, Station Name, Borough, and Line were documented. Additionally, each station on a line was given a "node-number" (there are stations that have multiple node numbers). For example, look at South Ferry Station (<i>Red Line - Bottom Middle</i>) and Canal St on the Blue Line (<i>Middle-Left</i>). South Ferry is the first stop on the 1 line and Canal St is the 10th station on the A line as well as the 9th station on the E line. Their values in the CSV were:
