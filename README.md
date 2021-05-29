@@ -62,7 +62,7 @@ If you never had to double back and could teleport to whatever station you neede
 The node that was in 8 of the 10 top routes, <i>either as the start or the end station</i>, was 416 Wakefield-241 St (The last stop of the 2 train). What's more interesting is that all the nodes paired with it were also extreme stations, meaning, they were at the end of a line. More than that, those extremes were aggressively extreme, not only were they at the end of a line, but they were also at the end of lines that had no transfer opportunities and took over 15m to reach. The route that Matthew took started and ended at two very aggressive extremes and the path that contained those two extremes took 21.06 hours (37th ranked route).
 
 <h4> The "Best" Routes </h4>
-Picking out the best route isn't as straight-forward as querying the database, finding the path with minimal distance, and following the directions. Remember, the program doesn't understand the cost of excessive transfers, that there are transfers that provide shortcuts, and the network topology isn't static. The one major insight that can be used to filter out routes is that aggressively extreme stations are where you want to start and where you want to end, which leaves about only 10 choices (45 configurations). The steps for the best routes aren’t listed in this report because each route has over 145 steps, but there is a <code>Describe-Route.sql</code> file in the repository that contains the query to use to list out all the steps for any path. The most properties of the most interesting paths are shown in the table below:
+Picking out the best route isn't as straight-forward as querying the database, finding the path with minimal distance, and following the directions. Remember, the program doesn't understand the cost of excessive transfers, that there are transfers that provide shortcuts, and the network topology isn't static. The one major insight that can be used to filter out routes is that aggressively extreme stations are where you want to start and where you want to end, which leaves about only 10 choices (45 configurations). The steps for the best routes aren’t listed in this report because each route has over 145 steps, but there is a <code>Describe-Route.sql</code> file in the repository that contains the query to use to list out all the steps for any path. The properties of the most interesting paths are shown in the table below: <br> </br>
 
 <table>
     <tr>
@@ -115,8 +115,3 @@ Picking out the best route isn't as straight-forward as querying the database, f
         <td>4</td>
     </tr>
 </table>
-
-<div style="line-height:11px">
-    <p style="text-align:right;font-style:italic;color:#c1121f"> <b> Data Science = Solving Problems = Happiness </b> </p>
-    <p style="text-align:right;"> <b> Denzel S. Williams </b> </p>
-</div>
