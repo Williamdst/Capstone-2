@@ -23,3 +23,8 @@
         <img align='center' src="https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white" width='150' />
     </a>
 </div> 
+
+<h2>I. Introduction </h2>
+To set a record in the <a href="https://en.wikipedia.org/wiki/Subway_Challenge">Subway Challenge</a> a participant must navigate the entire New York City Subway system (network) in the shortest time possible. The challenge requires competitors to stop at all 472 stations in the network and no person currently holds that record <a href="https://en.wikipedia.org/wiki/Subway_Challenge#Guinness_Record_times"> [1] </a>. The most recent record of 21H:28M:14S was set on July 22, 2016 by Matthew Ahn for the 469-Station Challenge <a href="https://www.timeout.com/newyork/blog/solo-straphanger-sets-new-all-station-subway-world-record-090616"> [2]</a>. Aside from beginning at Far Rockaway-Mott Avenue and ending at Flushing-Main Street, the route and methodology he used to beat the record is unknown. <br></br>
+
+<p style='text-align:center', align='center'> <b>The goal of this project is to use graph theory to determine a set of paths that could potentially be used to beat the current record.</b> </p>
