@@ -38,8 +38,7 @@ To solve this problem a graph representation of the subway system needs to be co
 Once 06:00 hits, all trains are activated, and express routes are implemented. For example, the late-night A-Train might go to certain stops, but it skips over them in the day. In the day, the A-Train is an express train and staying on it for the entire line wouldn’t take you to every stop. At some point you would have to get off and make a transfer to the local C-train to check off the stops that the A-Train skips. This is the main reason why the objective is to determine a set of paths and not just a single path. The only weight the program understands is the time between stations, it doesn't understand that train switching is expensive. Every time you get off a train you must wait for the next one to arrive, which adds to the overall time. Therefore, the program can only return a set of potential options that a human would then need to filter through.
 
 <h2> III. Modeling the MTA Subway System </h2>  
-The bulk of the work is translating the map into nodes and edges, saving them as CSV files that the program can understand. Like any route-inspection style problem, the Subway Challenge is about decision making, specifically what are you going to do at junctions, <i>stations where you can transfer to a different line</i>, or in the graph theoretical sense, nodes with degree greater than 2. Of the 472 stations in the system there are only 79 junctions which I call "decision stations". The lines on the night map are grouped into colors:
- 
+The bulk of the work is translating the map into nodes and edges, saving them as CSV files that the program can understand. Like any route-inspection style problem, the Subway Challenge is about decision making, specifically what are you going to do at junctions, <i>stations where you can transfer to a different line</i>, or in the graph theoretical sense, nodes with degree greater than 2. Of the 472 stations in the system there are only 79 junctions which I call "decision stations".
 
 <h2> III. Modifying a Prepackaged Solution </h2>
 In 2017, <a href="https://github.com/brooksandrew">Andrew Brooks</a> was tackling a similar problem which he solved using the NetworkX 2.0 library <a href="https://www.datacamp.com/community/tutorials/networkx-python-graph-tutorial"> [3]</a>. Thankfully, he packaged his solution into the <a href="https://github.com/brooksandrew/postman_problems">postman_problems</a>. With this package, you can plug in your own network and solve the <a href="https://www-m9.ma.tum.de/graph-algorithms/directed-chinese-postman/index_en.html#:~:text=The%20(Chinese)%20Postman%20Problem%2C,then%20return%20to%20the%20origin.">Chinese Postman Problem</a> (CPP). Unfortunately, the Subway Challenge isn't a typical CPP problem. The postman always wants to return to his vehicle, so the CPP finds a path that ends where it began. The Subway Challenge has no such requirement, the sole condition is to travel to all the edges at least once. Andrew's postman_package solves the CPP as is, therefore plugging in the subway network wouldn't work because it would always output a sub-optimal solution. However, with a little bit of network theory, the NetworkX 2.5 update, and some tweaks to his package, I was able to build on his work to solve the problem.<br />
@@ -49,3 +48,16 @@ In 2017, <a href="https://github.com/brooksandrew">Andrew Brooks</a> was tacklin
 ```shell
 pip install git+https://github.com/Williamdst/postman_problems.git
 ```
+
+<h2> 4. The Routes </h2>
+Of the 79 stations, there were 58 odd-degree nodes resulting in 1653 start-end configurations. To store all of the configurations and their stats, a simple SQLite database was integrated in the program. <br> </br>
+
+<p align='center'>
+    <img src="./Images/0017.Route-ERD.png" align='center', align='center' width="400">
+    <p align='center'> Figure 2. Entity Relationship Diagram of the Database </p>
+</p>
+
+
+If you never had to double back and could teleport to whatever station you needed to, the time it would take to traverse each of the 104 edges exactly one time would be 14.75 hours (884m). The rest of the time is spent going back over edges you already traveled; in Matthew Ahn's case that was nearly 7 hours. The columns that are used to pick a route are distance_walked and distance_doublebacked. The reason that edges_walked isn't a major concern is because it matters <b>what</b> edge you had to double back over. You can't make the claim that a route with 150 edges_walked is better than a 151-edge route, because that one edge may be the worst edge in the network.
+
+The node that was in 8 of the 10 top routes, either as the start or the end station, was 416 Wakefield-241 St (The last stop of the 2 train). What's more interesting is that all the nodes paired with it were also extreme stations, meaning, they were at the end of a line. More than that, those extremes were aggressively extreme, not only were they at the end of a line, but they were also at the end of lines that had no transfer opportunities and took over 15m to reach. The route that Matthew took started and ended at two very aggressive extremes and the path that contained those two extremes took 21.06 hours (37th ranked route).
