@@ -19,7 +19,7 @@ def main():
     odd_nodes = ppg.get_odd_nodes(g)
 
     # This for loop gets all the euler paths for every combination of start and end nodes,
-    # saves the routes/statistics as a dictionary, and appends it to the path_stats list
+    # saves the routes/statistics as a dictionary, and inserts it into the database
     for odd_node_pair in itertools.combinations(odd_nodes, 2):
         circuit_name = odd_node_pair[0] + ' - ' + odd_node_pair[1]
 
