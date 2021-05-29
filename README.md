@@ -37,6 +37,66 @@ To solve this problem a graph representation of the subway system needs to be co
 
 Once 06:00 hits, all trains are activated, and express routes are implemented. For example, the late-night A-Train might go to certain stops, but it skips over them in the day. In the day, the A-Train is an express train and staying on it for the entire line wouldn’t take you to every stop. At some point you would have to get off and make a transfer to the local C-train to check off the stops that the A-Train skips. This is the main reason why the objective is to determine a set of paths and not just a single path. The only weight the program understands is the time between stations, it doesn't understand that train switching is expensive. Every time you get off a train you must wait for the next one to arrive, which adds to the overall time. Therefore, the program can only return a set of potential options that a human would then need to filter through.
 
+<h2> III. Modeling the MTA Subway System </h2>
+<div>
+    <p>    
+The bulk of the work is translating the map into nodes and edges, saving them as CSV files that the program can understand. Like any route-inspection style problem, the Subway Challenge is about decision making, specifically what are you going to do at junctions, <i>stations where you can transfer to a different line</i>, or in the graph theoretical sense, nodes with degree greater than 2. Of the 472 stations in the system there are only 79 junctions which I call "decision stations". The lines on the night map are grouped into colors:
+    </p>
+</div>
+
+<img align='right' width='500' style="float:right;" src="https://raw.githubusercontent.com/Williamdst/Capstone-2/main/Images/0007.MTA-Night.jpg" />
+
+<div style="text-align:center;margin:0;font-size:12px;color:#c1121f" align='center'>
+    <table>
+    <tr>
+        <th>Red Lines</th>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <th>Green Lines</th>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <th>Purple Line</th>
+        <td>7</td>
+    </tr>
+    <tr>
+        <th>Blue Lines</th>
+        <td>A</td>
+        <td>E</td>
+    </tr>
+    <tr>
+        <th>Orange Lines</th>
+        <td>D</td>
+        <td>F</td>
+        <td>M</td>
+    </tr>
+    <tr>
+        <th>L.Green Line</th>
+        <td>G</td>
+    </tr>
+     <tr>
+        <th>Brown Line</th>
+        <td>J</td>
+    </tr>
+     <tr>
+        <th>Grey Lines</th>
+        <td>L</td>
+        <td>S</td>
+    </tr>
+    <tr>
+        <th>Yellow Lines</th>
+        <td>N</td>
+        <td>Q</td>
+        <td>R</td>
+    </tr>
+</table>
+</div>
+
 <h2> III. Modifying a Prepackaged Solution </h2>
 In 2017, <a href="https://github.com/brooksandrew">Andrew Brooks</a> was tackling a similar problem which he solved using the NetworkX 2.0 library <a href="https://www.datacamp.com/community/tutorials/networkx-python-graph-tutorial"> [3]</a>. Thankfully, he packaged his solution into the <a href="https://github.com/brooksandrew/postman_problems">postman_problems</a>. With this package, you can plug in your own network and solve the <a href="https://www-m9.ma.tum.de/graph-algorithms/directed-chinese-postman/index_en.html#:~:text=The%20(Chinese)%20Postman%20Problem%2C,then%20return%20to%20the%20origin.">Chinese Postman Problem</a> (CPP). Unfortunately, the Subway Challenge isn't a typical CPP problem. The postman always wants to return to his vehicle, so the CPP finds a path that ends where it began. The Subway Challenge has no such requirement, the sole condition is to travel to all the edges at least once. Andrew's postman_package solves the CPP as is, therefore plugging in the subway network wouldn't work because it would always output a sub-optimal solution. However, with a little bit of network theory, the NetworkX 2.5 update, and some tweaks to his package, I was able to build on his work to solve the problem.<br />
 
