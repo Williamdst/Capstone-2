@@ -57,7 +57,7 @@
 
 <h2>Stations-Decision-Points</h2>
 <i>The 79 juntions where the challenger must make a decision.</i> <br> </br>
-For every decision station on a line, the Station ID, Station Name, Borough, and Line were documented. Additionally, each station on a line was given a "node-number" (there are stations that have multiple node numbers). For example, look at South Ferry Station (<i>Red Line - Bottom Middle</i>) and Canal St on the Blue Line (<i>Middle-Left</i>). South Ferry is the first stop on the 1 line and Canal St is the 10th station on the A line as well as the 9th station on the E line. Their values in the CSV were:
+For every decision station on a line, the Station ID, Station Name, Borough, and Line were documented. Additionally, each station on a line was given a "node-number" (there are stations that have multiple node numbers). For example, look at South Ferry Station (<i>Red Line - Bottom Middle</i>) and Canal St on the Blue Line (<i>Middle-Left</i>). South Ferry is the first stop on the 1 line and Canal St is the 10th station on the A line as well as the 9th station on the E line. Their values in the CSV were: <br> </br>
     <table align='center'>
         <tr>
             <th>stationID</th>
@@ -81,8 +81,9 @@ For every decision station on a line, the Station ID, Station Name, Borough, and
             <td>A010:E009</td>
         </tr>
     </table>
+    
 The A and E train stop at Canal St, so both the "lines" and "nodes" column have more than one value, separated by a colon. The colon was used as a separator so that the values could be read independently when loaded into Neo4j (<code>Load-Neo4j-Cypher-Query.sql</code>). Looking at the more complex station, W 4 St-Wash Sq (<i>Blue/Orange Line - Upper Left</i>) where four trains stop at this station: A, D, E, and F train. As before, in the "lines" column and the "nodes" column, every train and their node number were documented:
-    <table align:'center'>
+    <table align: 'center'>
         <tr>
             <th>stationID</th>
             <th>stopName</th>
@@ -98,6 +99,7 @@ The A and E train stop at Canal St, so both the "lines" and "nodes" column have 
             <td>A011:D005:E008:F008</td>
         </tr>
     </table>
+    
 On the blue line Canal St was A010 and W 4 St-Wash Sq was A011, but what happened to Spring St. Spring St isn't a decision station because if you were traveling from Canal to W 4-St you wouldn't have a choice but to stop at Spring St. <br> </br>
 
 <b>Stations-Official-472</b> <br />
