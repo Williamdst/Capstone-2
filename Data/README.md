@@ -1,11 +1,10 @@
 <h2>Stations-Decision-Points</h2>
-The 79 stations where the challenger needs to make a decision
+The 79 stations where the challenger needs to make a decision. <br />
 
-<h4>Stations-Official-472</h4>
-The list of all 472 stations needed to complete the challenge. For example Broadway Junction, although
-a single point on the map is considered three different stations. One for the A/C, the L, and J/Z trains. 
+<b>Stations-Official-472</b><br />
+The list of all 472 stations needed to complete the challenge. For example Broadway Junction, although a single point on the map is considered three different stations. One for the A/C, the L, and J/Z trains. 
 
-Stations-Raw
+<b>Stations-Raw</b><br />
 The raw station data provided by the MTA website.
 
 
