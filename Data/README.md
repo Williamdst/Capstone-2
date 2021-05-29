@@ -102,17 +102,17 @@ The A and E train stop at Canal St, so both the "lines" and "nodes" column have 
     
 On the blue line Canal St was A010 and W 4 St-Wash Sq was A011, but what happened to Spring St. Spring St isn't a decision station because if you were traveling from Canal to W 4-St you wouldn't have a choice but to stop at Spring St. <br> </br>
 
-<b>Stations-Official-472</b> <br />
+<b><i>Stations-Official-472</i></b> <br />
 The list of all 472 stations needed to complete the challenge. For example Broadway Junction, although a single point on the map is considered three different stations. One for the A/C, the L, and J/Z trains. 
 
-<b>Stations-Raw</b><br />
+<b><i>Stations-Raw</i></b><br />
 The raw station data provided by the MTA website.
 
 
 
 <h2>Paths-Decision-Points</h2>
 <i>The complete edgelist of the Late-Night Service MTA Subway System</i>. <br> </br>
-Modeling the edges was similar to modeling the stations. When modeling stations, each row is a single station and the properties of that station. When modeling edges, each row is a single edge and the properties of that edge. Edges are defined by the two nodes it is connected to, so the first thing needed are the Start Station ID and the Stop Station ID. The three other properties were the routes (same idea as the "lines" column), the nodes (the node numbers), and the distance. In this case, the distance was the <b>time</b> it takes to traverse the edge, or in other words, the time to go from one station to the next. The edge that connects Canal St to W 4 St-Wash Sq is shown below:
+Modeling the edges was similar to modeling the stations. When modeling stations, each row is a single station and the properties of that station. When modeling edges, each row is a single edge and the properties of that edge. Edges are defined by the two nodes it is connected to, so the first thing needed are the Start Station ID and the Stop Station ID. The three other properties were the routes (same idea as the "lines" column), the nodes (the node numbers), and the distance. In this case, the distance was the <b>time</b> it takes to traverse the edge, or in other words, the time to go from one station to the next. The edge that connects Canal St to W 4 St-Wash Sq is shown below: <br> </br>
  <table align='center'>
         <tr>
             <th>startID</th>
@@ -134,11 +134,8 @@ Modeling the edges was similar to modeling the stations. When modeling stations,
 Although you can traverse this edge on either the A or E train, it is important that this edge is <b>not</b> duplicated in the edge list. If the edge is duplicated, then the program will read it as two separate edges and will solve the problem under the impression that it must traverse the edge twice. After removing all the duplicates there were 104 edges modeled. <br> </br>
 
 
-<b>Paths-Decision-Points-Subset</b><br />
-A simplified subset of the edgelist. The lines modeled are the A,E,J,L trains. <br />
+<b><i>Paths-Decision-Points-Subset</i></b><br />
+A simplified subset of the edgelist. The lines modeled in the subset are the A,E,J,L trains. <br />
 
-<b>Paths-Matching-Test</b><br />
+<b><i>Paths-Matching-Test</i></b><br />
 A super simple edgelist that can be used for testing the program and deciphering what is happening. This edgelist was used in the report to explain the program.
-
-
-
