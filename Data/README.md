@@ -83,7 +83,7 @@ For every decision station on a line, the Station ID, Station Name, Borough, and
     </table>
     
 The A and E train stop at Canal St, so both the "lines" and "nodes" column have more than one value, separated by a colon. The colon was used as a separator so that the values could be read independently when loaded into Neo4j (<code>Load-Neo4j-Cypher-Query.sql</code>). Looking at the more complex station, W 4 St-Wash Sq (<i>Blue/Orange Line - Upper Left</i>) where four trains stop at this station: A, D, E, and F train. As before, in the "lines" column and the "nodes" column, every train and their node number were documented:
-   <table align: 'center'>
+   <table align='center'>
         <tr>
             <th>stationID</th>
             <th>stopName</th>
