@@ -115,3 +115,11 @@ Picking out the best route isn't as straight-forward as querying the database, f
         <td>4</td>
     </tr>
 </table>
+
+<hr>
+
+<h3> Acknowledgements </h3>
+
+I want to give a shoutout to my mentor Devin Cavagnaro for teaching me about agile project management. Without the iterative approach of agile management the project would have been thrown in the trash. <br></br>
+
+Big thanks to Andrew Brooks for his work and the well put together postman_problems package, I couldn't have completed the project without it. And once again, <a href="https://github.com/alexandresanlim/Badges4-README.md-Profile"> Alexandre Sanlim </a> for the repository of awesome badges
